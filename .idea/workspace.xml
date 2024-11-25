@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb9ee192-0103-451f-b2e6-c689a0277785" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/site.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +56,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.flaskblog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.form.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.flaskblog.executor": "Run",
+    "Python.form.executor": "Run",
+    "Python.run.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Republic\Coding\Python\FlaskTutorial\flaskblog" />
       <recent name="C:\Republic\Coding\Python\FlaskTutorial\templates" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="flaskblog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FlaskTutorial" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,7 +86,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskblog.py" />
+      <option name="SCRIPT_NAME" value="C:\Republic\Coding\Python\FlaskTutorial\run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.flaskblog" />
+        <item itemvalue="Python.run" />
       </list>
     </recent_temporary>
   </component>
