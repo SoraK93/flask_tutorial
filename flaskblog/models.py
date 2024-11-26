@@ -1,10 +1,16 @@
 from datetime import datetime
-from flaskblog import db
+from flaskblog import db, login_manager
 from sqlalchemy import String, ForeignKey, Integer, DateTime, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from flask_login import UserMixin
 
 
-class User(db.Model):
+@login_manager.user_loader
+def load_user(user_id):
+	return db.get_or_404(User, user_id)
+
+
+class User(db.Model, UserMixin):
 	__tablename__ = "user"
 	id: Mapped[int] = mapped_column(Integer, primary_key=True)
 	username: Mapped[str] = mapped_column(String(20), unique=True, nullable=False)
