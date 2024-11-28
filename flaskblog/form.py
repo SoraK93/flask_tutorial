@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
 from flaskblog import db
 from flaskblog.models import User
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 
 
@@ -50,4 +50,9 @@ class UpdateAccountForm(FlaskForm):
 			if user:
 				raise ValidationError("That email is taken. Please choose a different one.")
 
+
+class PostForm(FlaskForm):
+	title = StringField("Titile", validators=[DataRequired()])
+	content = TextAreaField("Content", validators=[DataRequired()])
+	submit = SubmitField("Post")
 
