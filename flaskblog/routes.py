@@ -10,7 +10,8 @@ from PIL import Image
 @app.route("/")
 @app.route("/home")
 def home():
-	posts = db.session.execute(db.select(Post)).scalars()
+	page = request.args.get("page", 1, type=int)
+	posts = db.paginate(db.select(Post).order_by(Post.date_posted.desc()), page=page, per_page=5)
 	return render_template("home.html", posts=posts)
 
 
@@ -148,3 +149,15 @@ def delete(post_id):
 	return redirect(url_for("home"))
 
 
+@app.route("/user/<string:name>/")
+def user_posts(name):
+	page = request.args.get('page', 1, type=int)
+	user = db.session.execute(db.select(User).filter_by(username=name)).scalars().first()
+	posts = db.paginate(
+		db.select(Post).
+		filter_by(author=user).
+		order_by(Post.date_posted.desc()),
+		page=page,
+		per_page=5
+	)
+	return render_template("user_post.html", posts=posts, user=user)
